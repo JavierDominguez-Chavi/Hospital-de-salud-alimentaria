@@ -59,7 +59,7 @@ namespace HospitalDeSaludAlimentaria
         private Boolean ValidateHeight()
         {
             Boolean validation = false;
-            if (!String.IsNullOrEmpty(this.TextBox_Height.Text))
+            if (!String.IsNullOrWhiteSpace(this.TextBox_Height.Text))
             {
                 string heightText = this.TextBox_Height.Text.ToString();
                 int heightNumber = Int32.Parse(heightText);
@@ -105,7 +105,7 @@ namespace HospitalDeSaludAlimentaria
         private Boolean ValidateWeight()
         {
             Boolean validation = false;
-            if (!String.IsNullOrEmpty(this.TextBox_ActualWeight.Text))
+            if (!String.IsNullOrWhiteSpace(this.TextBox_ActualWeight.Text))
             {
                 string weigthText = this.TextBox_ActualWeight.Text.ToString();
                 float weigthNumber = float.Parse(weigthText);
